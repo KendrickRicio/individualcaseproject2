@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@font-face { font-family: Jura; src: url('fonts/Jura-VariableFont_wght.ttf'); } 
+@font-face { font-family: Orbitron; src: url('fonts/Orbitron-VariableFont_wght.ttf');} 
+body {
+    background-color: #16262E;
+    line-height: 1.5;
+    font-family: Jura, sans-serif;
+    color: #eee;
+}
+#wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #0f191f;
+}
+.nav-label-wrapper {
+    width: 100%;
+    background-color: #0f191f;
+    line-height: 1;
+    position: relative;
+    z-index: 25000;
+    font-family: Jura, sans-serif;
+
+    padding: 0% 12.5%;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    white-space: nowrap;
+}
+section {
+    background: #16262E;
+    color: #eee;
+}
+h1 {
+    font-family: Orbitron;
+    text-transform: uppercase;
+    color: rgb(219, 253, 255);
+    text-shadow: 0 0 16px #29668a;
+}
+footer {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px 20px 25px 20px;
+    background-color: #283740;
+    color: #aaaaaa;
+    bottom: 0;
+}
+a {
+    text-decoration: none;
+    color: #aaaaaa;
+}
+ul {
+    list-style: none;
+}
+
+ul ul * {
+    margin-left: 12px;
+}
+
+/* Header */
+header .title {
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+header .title a {
+    color: #ffffff;
+}
+header .navbar {
+    padding: 0 10px;
+}
+header .navbar a {
+    font-size: 12px;
+    font-weight: 750;
+    color: #aaaaaa;
+    text-transform: uppercase;
+    transition: color 0.5s ease-in;
+}
+header .navbar ul li {
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: #aaaaaa;
+}
+header .navbar ul li a {
+    display: block;
+    font-size: 16px;
+    padding: 8px 0;
+    color: #aaaaaa;
+}
+header .navbar ul li a:hover {
+    color: #ffffff
+}
+header #navbox-check {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.navbox-toggle {
+    width: 40px;
+    height: 32px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f191f;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.navbox-toggle span {
+    display: block;
+    height: 2px;
+    width: 20px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    position: relative;
+}
+.navbox-toggle span::before,
+.navbox-toggle span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    background-color: #ffffff;
+    left: 0;
+}
+.navbox-toggle span::before {
+    top: -5px;
+}
+.navbox-toggle span::after {
+    top: 5px;
+}
+p {
+    display: inline-block;
+}
+.float-image {
+    width: 600px;
+    box-shadow: 0 0 10px #29668a;
+    margin: 8px 32px
+}
+
+.float-image-resource {
+    width: 300px;
+    max-width: 90%;
+    box-shadow: 0 0 10px #29668a;
+    margin: 8px 32px
+}
+
+.float-resource {
+    max-width: 90%;
+    box-shadow: 0 0 10px #29668a;
+    margin: 8px 32px;
+}
+
+.resource-left iframe {
+    float: left;
+}
+
+.resource-right iframe {
+    float: right;
+}
+
+.resource-right h1 {
+    text-align: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.content-table {
+    display: inline-block;
+    border-collapse: collapse;
+    margin: 4px 0;
+    font-size: 0.9em;
+    width: auto;
+    max-width: 100%;
+    /*min-width: 400px;*/
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #2bcdd8;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #283740;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #2bcdd8;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #21a2ab;
+}
+
+@media only screen and (max-width: 1024px) {
+    .float-image {
+        width: 75%;
+        max-width: 300px;
+        margin: 16px 16px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-label-wrapper {
+        position: fixed;
+        width: 100%;
+    }
+    .navbox-toggle {
+        display: flex;
+    }
+
+    .nav-label-wrapper .title {
+        padding-left: 16px;
+    }
+
+    header .navbar {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        background-color: #0f191f;
+        border-top: 1px solid #16262E;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 20000;
+    }
+    header .navbar ul li {
+        display: block;
+        margin: 0;
+    }
+    header #navbox-check:checked ~ .navbar {
+        opacity: 1;
+        visibility: visible;
+    }
+    header #navbox-check:checked ~ .navbox-toggle span {
+        background-color: transparent;
+    }
+    header #navbox-check:checked ~ .navbox-toggle span::before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+    header #navbox-check:checked ~ .navbox-toggle span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    header .navbar ul li a:hover {
+        background-color: #34566b;
+    }
+    .float-image {
+        width: 100%;
+        max-width: 300px;
+        margin: 16px 0px;
+    }
+}

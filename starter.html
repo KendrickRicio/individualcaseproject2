@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <title>Star Citizen Starter</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="stop-transition">
+    <header>
+        <div class="nav-label-wrapper">
+            <div class="title">
+                <a href="index.html">SC Directory</a>
+            </div>
+            <input type="checkbox" id="navbox-check">
+            <label for="navbox-check" class="navbox-toggle">
+                <span></span>
+            </label>
+            <nav class='navbar'>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guide.html">Guide</a></li>
+                    <li><a href="starter.html">Starter</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="wrapper">
+            <section class="news">
+                <h1>Game Packages</h1>
+                    <p>
+                        To play Star Citizen, you will need a <strong>Game Package</strong>.<br>
+                        A Game Package includes both a ship and a digital copy of the game.
+                    </p>
+                    <br><br>
+                    <p>
+                        The <strong><a href="https://robertsspaceindustries.com/pledge" target="_blank" rel="noopener noreferrer">Pledge Store</a></strong> has many options to choose from.
+                    </p>
+                    <br><br>
+                    <ul>
+                        <li>If you to spend the least money, consider:
+                            <br><br>
+                            <ul>
+                                <li>Aurora MR ($45)</li>
+                                <ul>
+                                    <li>Includes small interior</li>
+                                    <li>Includes bed</li>
+                                    <li>More stowage storage</li>
+                                    <li>Equipped with missiles</li>
+                                </ul>
+                                <br>
+                                <li>Mustang Alpha ($45)</li>
+                                <ul>
+                                    <li>Better fit for ship combat</li>
+                                    <li>Better flight performance</li>
+                                    <li>More cargo storage</li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>Otherwise, consider the following ships:</li>
+                        <br>
+                        <ul>
+                            <li>Anvil C8X Pisces Expedition ($60)
+                                <ul>
+                                    <li>Snub Pathfinder</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>Drake Cutter ($60)
+                                <ul>
+                                    <li>Light Freight</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>Origin 100i ($65)
+                                <ul>
+                                    <li>Touring</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>Avenger Titan ($70)
+                                <ul>
+                                    <li>Light Freight</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>Anvil Arrow ($95)
+                                <ul>
+                                    <li>Light Fighter</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>Anvil Arrow ($95)
+                                <ul>
+                                    <li>Light Freight</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>Cutlass Black ($115)
+                                <ul>
+                                    <li>Touring</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </ul>
+                    <br>
+                    <hr>
+                    <br>
+            </section>
+            <section>
+                <p>Interested in buying more ships in-game?<br>
+                Check ships off in the box below to see how<br>
+                many credits you have to pay to buy them<br>
+                in-game!</p>
+                <br><br>
+                <div style="font-size: 24px; font-weight: bold;">
+                    <span>TOTAL COST:</span> <span id="total">0</span> AUEC
+                </div>
+                <div style="min-width: 160px; min-height: 160px; height: 320px; overflow-y: auto; background-color: #213844; border-style: solid;">
+                    <form id="shipForm"></form>
+                </div>
+                <br><br><br><br>
+            </section>
+        </div>
+    </main>
+    <footer>
+        Kendrick Ricio<br>
+        STAR-T4BW-6D5D
+    </footer>
+    <script src="js/calculator.js"></script>
+    <script src="modernizr.custom.05819.js"></script>
+    <script>document.body.classList.remove('stop-transition')</script>
+</body>
+</html>

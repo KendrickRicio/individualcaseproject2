@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Citizen Directory</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="carousel.css">
+    <style>
+        .news {
+            padding-top: 32px;
+            padding-bottom: 32px;
+            color: #eee;
+        }
+        .stop-transition * {
+            transition: none !important;
+            -webkit-transition: none !important;
+            -moz-transition: none !important;
+            -ms-transition: none !important;
+            -o-transition: none !important;
+        }
+    </style>
+</head>
+<body class="stop-transition">
+    <header>
+        <div class="nav-label-wrapper">
+            <div class="title">
+                <a href="index.html">SC Directory</a>
+            </div>
+            <input type="checkbox" id="navbox-check">
+            <label for="navbox-check" class="navbox-toggle">
+                <span></span>
+            </label>
+            <nav class='navbar'>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guide.html">Guide</a></li>
+                    <li><a href="starter.html">Starter</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="media-carousel">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slider">
+                        <span>
+                            <span class="carousel-title"><a href="guide.html#what-is-star-citizen">Intro to Star Citizen</a></span>
+                            <span class="carousel-subtitle"><a href="guide.html#what-is-star-citizen">Learn about the most ambitious game in existence.</a></span>
+                            <video autoplay muted loop preload id="carousel-video-1" class="carousel-item">
+                                <source src ="videos/SCCarousel1.mp4" type="video/mp4">
+                                Your browser does not support videos.
+                            </video>
+                        </span>
+                        <span>
+                            <span class="carousel-title"><a href="guide.html">Beginner Guide</a></span>
+                            <span class="carousel-subtitle"><a href="guide.html">Take your first steps.</a></span>
+                            <video muted loop preload id="carousel-video-2" class="carousel-item">
+                                <source src ="videos/SCCarousel2.mp4" type="video/mp4">
+                                Your browser does not support videos.
+                            </video>
+                        </span>
+                        <span>
+                            <span class="carousel-title"><a href="https://www.youtube.com/watch?v=7xFH1fUhhLM" target="_blank" rel="noopener noreferrer">The Scale of Star Citizen</a></span>
+                            <span class="carousel-subtitle"><a href="https://www.youtube.com/watch?v=7xFH1fUhhLM" target="_blank" rel="noopener noreferrer">Take in the grand scale of the Persistent Universe.</a></span>
+                            <video muted loop preload id="carousel-video-3" class="carousel-item">
+                                <source src ="videos/SCCarousel3.mp4" type="video/mp4">
+                                Your browser does not support videos.
+                            </video>
+                        </span>
+                        <span>
+                            <span class="carousel-title"><a href="resources.html">Resources</a></span>
+                            <span class="carousel-subtitle"><a href="resources.html">Experience works made by the community.</a></span>
+                            <video muted loop preload id="carousel-video-4" class="carousel-item" style="margin-top: -12%; margin-bottom: -12%;">
+                                <source src ="videos/SCCarousel4.mp4" type="video/mp4">
+                                Your browser does not support videos.
+                            </video>
+                        </span>
+                        <span>
+                            <span class="carousel-title"><a href="https://robertsspaceindustries.com/pledge" target="_blank" rel="noopener noreferrer">Pledge Store</a></span>
+                            <span class="carousel-subtitle"><a href="https://robertsspaceindustries.com/pledge" target="_blank" rel="noopener noreferrer">Help test out the game today.</a></span>
+                            <img src="images/600i-island.jpg" class="carousel-item" style="margin-top: 27.5%" alt="600i Touring">
+                        </span>
+                    </div>
+                    <div class="carousel-controls">
+                        <span class="carousel-arrow-container">
+                            <span class="carousel-arrow left">
+                                <i class="material-icons">
+                                    keyboard_arrow_left
+                                </i>
+                            </span>
+                            <span class="carousel-arrow right">
+                                <i class="material-icons">
+                                    keyboard_arrow_right
+                                </i>
+                            </span>
+                        </span>
+                        <ul>
+                            <li class="selected"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <div id="wrapper">
+        <section class="news">
+            <h1>Welcome to the Star Citizen Directory.</h1>
+            <h2>Is the game worth it?</h2>
+            <p>Star Citizen is currently a playable alpha. At its current state, you will be playing a space simulator with FPS elements. The game still lacks many features, has plenty bugs, and does not even have all of its gameplay loops (which are things like mining and trading) yet. The game currently only has one system with four planets. Each planet has their own satellites.</p>
+            <br>
+            <p>Despite being an incomplete game, it is a fun game to test out. If you are looking for a finished game, then do not spend money on this game. If you do enjoy it and do not mind all the setbacks of playing the game in its alpha state, then pledging for the game is a great deal.</p>
+            <br><br>
+            <p>Star Citizen is:</p>
+            <ul>
+                <li> &nbsp; • the most successful crowdfunding project ever</li>
+                <li> &nbsp; • the most ambitious space simulator (and possibly even game) ever</li>
+                <li> &nbsp; • an MMO, Space Sim, FPS, Mining, Racing, Flight Sim, and many more in one</li>
+            </ul>
+        </section>
+        <br><br><br><br>
+    </div>
+    </main>
+    <footer>
+        Kendrick Ricio<br>
+        STAR-T4BW-6D5D
+    </footer>
+    <script src="js/carousel.js"></script>
+    <script src="modernizr.custom.05819.js"></script>
+    <script>document.body.classList.remove('stop-transition')</script>
+</body>
+</html>

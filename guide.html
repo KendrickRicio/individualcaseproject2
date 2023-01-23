@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <title>Star Citizen Directory</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <style>
+        .beginner-guide {
+            padding-bottom: 32px;
+            color: #eee;
+        }
+        .beginner-guide div {
+            padding-bottom: 64px;
+        }
+        .beginner-guide h1 {
+            font-size: 200%;
+            color: rgb(219, 253, 255);
+            text-shadow: 0 0 16px #29668a;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .beginner-guide {
+                padding-top: 10vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-label-wrapper">
+            <div class="title">
+                <a href="index.html">SC Directory</a>
+            </div>
+            <input type="checkbox" id="navbox-check">
+            <label for="navbox-check" class="navbox-toggle">
+                <span></span>
+            </label>
+            <nav class='navbar'>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guide.html">Guide</a></li>
+                    <li><a href="starter.html">Starter</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="sidebar" class="sidebar">
+            <div class="inner">
+                <nav>
+                    <ul>
+                        <li class="mobile-sidebar-caption"><a href="#">Beginner Guide</a></li>
+                        <li class="selected"><a href="#what-is-star-citizen">What is Star Citizen?</a></li>
+                        <li><a href="#first-steps">First Steps</a></li>
+                        <li><a href="#entering-star-citizen">Entering Star Citizen</a></li>
+                        <li><a href="#origin-of-an-adventure">Origin of an Adventure</a></li>
+                        <li><a href="#glossary">Glossary</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <div class="banner">
+            <img src="images/guide-banner.png" alt="Orison from Above">
+        </div>
+
+        <div id="wrapper">
+            <section class="beginner-guide">
+                <div id="what-is-star-citizen">
+                    <h1>What is Star Citizen?</h1>
+                    <hr><br>
+                    <p>
+                        <img src="images/SCGuide-1.png" class="float-image float-right" alt="Siege of Orison">
+                        In Star Citizen, you play the role of someone living in a sci-fi universe in which space travel is commonplace. In this world, you have the ability to explore different cities, planets, moons, space stations, asteroid belts, and even other systems. Everything in this world is highly interactable just like they would be in real life. The game is a life simulator set in the far future and you can do whatever you desire within it. This is the experience Star Citizen plans to deliver.
+                        <br><br>
+                        Cloud Imperium Games (or CIG for short), the studio behind Star Citizen, started out as a very small studio. Now, they are one of the biggest game development companies out there
+                        With every major update, CIG is introducing new tech important to the gaming industry as a whole.
+                    </p>
+                </div>
+                <div id="first-steps">
+                    <h1>First Steps</h1>
+
+                    <h2>Prerequisites</h2>
+                    <div class="guide-section">
+                        Welcome to Star Citizen, the most ambitious game in existence!<br>
+                        It is a very demanding game with several bugs.<br>
+                        <br>
+                        Thankfully, more and more optimizations are coming that make the game perform better than ever.<br>
+                        <br>
+                        Before downloading the game, please make sure you have a computer that can play the game and are ready to experience lots of bugs.<br>
+                        <br>
+                        <table class="content-table">
+                            <thead>
+                                <tr>
+                                    <th colspan="2" style="text-align: center;">Minimum Specifications</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>CPU</td>
+                                <td>Intel Core i5 4xxx or AMD FX 6xxx</td>
+                            </tr>
+                            <tr>
+                                <td>GPU</td>
+                                <td>NVIDIA GTX 950 or AMD R7 260X</td>
+                            </tr>
+                            <tr>
+                                <td>RAM</td>
+                                <td>8GB 1600MHz (with configured pagefile)</td>
+                            </tr>
+                            <tr>
+                                <td>STO</td>
+                                <td>5400 RPM HDD</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="content-table">
+                            <thead>
+                                <tr>
+                                    <th colspan="2" style="text-align: center;">Known Playable Specifications</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>CPU</td>
+                                <td>Intel Core i5 4xxx or AMD FX 6xxx</td>
+                            </tr>
+                            <tr>
+                                <td>GPU</td>
+                                <td>NVIDIA GTX 970 or AMD R9 390X</td>
+                            </tr>
+                            <tr>
+                                <td>RAM</td>
+                                <td>16GB 1600MHz (with configured pagefile)</td>
+                            </tr>
+                            <tr>
+                                <td>STO</td>
+                                <td>SSD</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <br><br>
+                        <h2>Account Creation</h2>
+                        <img src="images/SCGuide-AccountCreation.png" style="width: 300px;" class="float-image float-right" alt="Account Creation">
+                        Creating an account is simple.<br>
+                        You can begin signing up here.<br>
+                        <br>
+                        <strong>Account Name</strong><br>
+                        This is your in-game handle.<br>
+                        This will be how others will identify both inside and outside of Star Citizen.<br>
+                        <br>
+                        <strong>Email</strong><br>
+                        This email address will be used to login to your account.<br>
+                        <br>
+                        <strong>Password</strong><br>
+                        It is recommended to have a strong password.<br>
+                        <br>
+                        <strong>Referral Code</strong><br>
+                        This is optional. If a friend has given you a code, put it here.<br>
+                        <br>
+                        For example, here's my code: STAR-T4BW-6D5D<br>
+                        <br>
+                        You get an additional 5,000 UEC starting cash,<br>
+                        great for buying weapons, ship upgrades, and personal armor!<br>
+                        <br>
+                        <strong>Birth Date</strong><br>
+                        May be used for future events.<br>
+                        <br>
+                        <strong>Stay Informed</strong><br>
+                        Checking this box will sign you up for RSI and CIG newsletters.<br>
+                        
+                        <br><br>
+
+                        <h2>Game Packages</h2>
+                        <img src="images/SC2.png" class="float-image float-right" alt="Avenger Titan">
+                        To play Star Citizen, you will need a <strong>Game Package</strong>.<br>
+                        A Game Package includes both a ship and a digital copy of the game.
+                        <br><br>
+                        The <strong><a href="https://robertsspaceindustries.com/pledge" target="_blank" rel="noopener noreferrer">Pledge Store</a></strong> has many options to choose from. For this guide, we'll be focusing on the two main game packages starting at $45 each.
+                        <br><br>
+                        <h3>Aurora MR Starter Pack</h3>
+                        Why pick the Aurora MR over the Mustang Alpha?
+                        <ul>
+                            <li>&emsp;• Includes small interior</li>
+                            <li>&emsp;• Includes bed</li>
+                            <li>&emsp;• More stowage storage</li>
+                            <li>&emsp;• Equipped with missiles</li>
+                        </ul>
+                        <br><br>
+                        <h3>Mustang Alpha Starter Pack</h3>
+                        Why pick the Mustang Alpha over the Mustang Alpha?
+                        <ul>
+                            <li>&emsp;• Better fit for ship combat</li>
+                            <li>&emsp;• Better flight performance in space and atmosphere</li>
+                            <li>&emsp;• More cargo storage</li>
+                            <li>&emsp;• Slightly higher value</li>
+                        </ul>
+                        <img src="images/SCGuide-StarterPacks.png" style="width: 600px;" class="float-image float-right" alt="Starter Packs">
+                        <br><br>
+                        While the Aurora MR and Mustang Alpha are both perfectly good ships for starting out, you can also buy other game packages.<br><br>
+                        Other starter ships are arguably better, but more expensive.<br>
+                        <br><br>
+                        <h2>Installing the RSI Launcher</h2>
+                        Once you have obtained a game package,<br>
+                        it's time to install the game.<br>
+                        <br><br>
+                        To do that, you'll need the RSI Launcher.<br><br>
+                        <img src="images/SCGuide-Launcher.png" style="width: 600px;" class="float-image" alt="Launcher">
+                        <br><br>
+                        Please follow the steps below:<br>
+                        <br><br>
+                        <strong>1.</strong> Head to the RSI Website.<br>
+                        <br><br>
+                        <strong>2.</strong> Click on Apps on the top left of the page.<br>
+                        <br><br>
+                        <strong>3.</strong> Within the dropdown menu, click on LAUNCHER<br>
+                        <br><br>
+                        <strong>4.</strong> If everything is all good to go, click DOWNLOAD INSTALLER.<br>
+                        <br><br>
+                        <strong>5.</strong> After installing the launcher, log in.<br>
+                        <br><br>
+                        <strong>6.</strong> Click INSTALL to begin the installation.<br>
+                        <br><br>
+                        <strong>7.</strong> When the game is finished installing, click LAUNCH GAME to begin playing!<br>
+                    </div>
+                </div>
+                <div id="entering-star-citizen">
+                    <h1>Entering Star Citizen</h1>
+
+                    <div class="guide-section">
+                        <h2>Game Settings</h2>
+                        Upon launching Star Citizen, you will have multiple game modes to choose from.<br><br>
+                        For the entirety of this guide, we will focus on the Persistent Universe.<br><br>
+                        Before entering the persistent universe, let's go to the options menu and change our settings.<br><br>
+                        At the bottom left of the main menu, click on OPTIONS.<br><br>
+                        Note: If asked about it, FOIP is a system "by which your webcam captures your facial expressions and mimics them on your character in-game, in real time."
+                        <br><br>
+                        <h2>Recommended Settings</h2>
+                        To get the best performance out of the game, we'll want to change some settings in the options menu.<br><br>
+                        To begin, head to the Graphics tab at the top in the options menu.<br><br>
+                        Note: You can turn VSync on if you are using a widescreen display or TV.<br><br>
+                        Star Citizen is very CPU-heavy.<br><br>
+                        To lighten the load on your CPU, you'll want to set your game's quality to High or Very High. Doing so will put move some of the load from your CPU to your GPU. Setting your quality to medium or low is actually worse than high and very high.<br><br>
+                        If you have under 32GB of RAM, please set up a pagefile!<br><br>
+                        For more tips on how to improve performance in-game, please check out the FAQ.
+                        <br><br>
+                        <h2>Persistent Universe</h2>
+                        In this guide, we'll be learning how to traverse through Star Citizen's Persistent Universe.<br><br>
+                        The Persistent Universe (PU) is a massively multiplayer simulation and Star Citizen's main place of action.<br><br>
+                        When you're ready to play, select PERSISTENT UNIVERSE.<br><br>
+                        <h2>Character Creation</h2>
+                        Creating a character is fairly simple.<br><br>
+
+                        <strong>1.</strong> Begin by selecting your character's gender.<br><br>
+
+                        <strong>2.</strong> Choose your WHOLE HEAD with the up and down arrows on the left.<br><br>
+
+                        <strong>3.</strong> Begin blending and start cycling through the different base heads, blending their features to your character.<br><br>
+
+                        <strong>4.</strong> When finished, review and save your character.
+                    </div>
+                </div>
+
+                <div id="origin-of-an-adventure">
+                    <h1>Origin of an Adventure</h1>
+                    <br><br>
+                    <h2>Waking Up</h2>
+                        Good morning and welcome to the world of Star Citizen!<br><br>
+
+                        If you've been following along this guide, you'll find yourself awake in a hab in the city you chose before entering the Persistent Universe. Habs are small apartments for people on the go.<br><br>
+
+                        Press Y to get out of bed.<br><br>
+                        Use W, A, S, and D to move around.<br><br>
+                        Use your mouse to look around.<br><br>
+
+                        To interact with any interactive item in the game,
+                        hold F<br><br>
+                        then click your primary mouse button when you're ready to interact.<br><br>
+
+                        You can interact with many objects including bottles, chairs, and food.<br><br>
+
+                        Take one last look around your apartment, interact with the door panel next to the door and head out your room.<br><br>
+
+                        <h2>Going Outside</h2>
+                        It's time to go outside.<br><br>
+
+                        After exiting your apartment room, head to the center of the floor and take the elevator down to the ground floor lobby.<br><br>
+
+                        You can use SHIFT to sprint and get to the elevator faster.<br><br>
+
+                        If you want to experience the 'verse in third-person,
+                        press F4 to enter an over-the-shoulder third-person view.<br><br>
+                        Hold Z to enter "freelook" mode.<br><br>
+                        &emsp;To unlock your camera, press F4 + *.<br><br>
+                        Press F4 again for a behind-the-back third-person view.<br><br>
+                        Press F4 AGAIN to go back into first-person view.<br><br>
+
+                        To turn off the chat, press F12.<br><br>
+                        If you need help, you can leave chat on and ask for help!<br><br>
+                        In Star Citizen, learning as you go is a great way to learn the game, so the guide will end here. Good luck and have fun in the persistent universe!
+                        <br><br>
+                        <img src="images/SC1.png" style="width: 300px;" alt="Port Olisar">
+
+                </div>
+                
+                <div id="glossary">
+                    <h1>Glossary</h1>
+                    <div class="guide-section">
+                        <table>
+                            <tbody>
+                              <tr>
+                                <td>Term</td>
+                                <td>Definition</td>
+                              </tr>
+                              <tr>
+                                <td>30K</td>
+                                <td>A Code 30000 error that usually appears when the server crashes.</td>
+                              </tr>
+                              <tr>
+                                <td>aUEC</td>
+                                <td>Alpha United Earth Credits. This is a temporary currency designated for alpha testing.</td>
+                              </tr>
+                              <tr>
+                                <td>Buyback Token</td>
+                                <td>Players who melt their pledges receive a token allowing for the melted item to be purchased again. Buyback Tokens are issued once every three months.</td>
+                              </tr>
+                              <tr>
+                                <td>CCU</td>
+                                <td>Cross Chassis Upgrade. Players can upgrade a pledged ship hull to another for a cost.</td>
+                              </tr>
+                              <tr>
+                                <td>CIG</td>
+                                <td>Cloud Imperium Games. This is the company developing Star Citizen.</td>
+                              </tr>
+                              <tr>
+                                <td>CS</td>
+                                <td>CrimeStat. This is a rating used to determine the crime level of a criminal.</td>
+                              </tr>
+                              <tr>
+                                <td>Concept</td>
+                                <td>A ship or vehicle which goes on sale before it's flight ready.</td>
+                              </tr>
+                              <tr>
+                                <td>Concierge</td>
+                                <td>A backer who has directly pledged at least $1000 USD.</td>
+                              </tr>
+                              <tr>
+                                <td>EM</td>
+                                <td>Electromagnetic. This is a type of signature for ships.</td>
+                              </tr>
+                              <tr>
+                                <td>ESP</td>
+                                <td>Enhanced Stick Precision. This is related to joystick targeting controls.</td>
+                              </tr>
+                              <tr>
+                                <td>EVA</td>
+                                <td>Extra Vehicular Activity. You use EVA thrusters when space walking.</td>
+                              </tr>
+                              <tr>
+                                <td>Evocati</td>
+                                <td>This is a testing branch for Star Citizen's best community testers. They are under NDA.</td>
+                              </tr>
+                              <tr>
+                                <td>Flight Ready</td>
+                                <td>Any ship that is ready to be flown is flight ready.</td>
+                              </tr>
+                              <tr>
+                                <td>FOIP</td>
+                                <td>Face over IP. This is essentially VOIP but for your webcam. The webcam is used to translate your face's expressions, head turns, eye movements, and lip motions to your character.</td>
+                              </tr>
+                              <tr>
+                                <td>IAE</td>
+                                <td>Intergalactic Aerospace Expo. An annual in-game event showcasing several ships and vehicles from different manufacturers. Ships and Starter Packs also go on sale during this time.</td>
+                              </tr>
+                              <tr>
+                                <td>JT</td>
+                                <td>Jump Town. This is a famous drug lab located on the Yela moon.</td>
+                              </tr>
+                              <tr>
+                                <td>JP</td>
+                                <td>Jump Point. These are wormholes connecting neighboring star systems with each other.</td>
+                              </tr>
+                              <tr>
+                                <td>Lagrange Point</td>
+                                <td>These are areas of space between planetary orbits devoid of gravity. As a result, lagrange points are ideal locations for points of interest.</td>
+                              </tr>
+                              <tr>
+                                <td>Loaner</td>
+                                <td>When a player owns a ship in concept, they will receive a ship (and possibly more) to make up for the ship not being in the game yet.</td>
+                              </tr>
+                              <tr>
+                                <td>LTI</td>
+                                <td>Lifetime Insurance. A ship insurance that usually comes with ships in concept.</td>
+                              </tr>
+                              <tr>
+                                <td>Melting</td>
+                                <td>Players can exchange their digital purchases for store credit.</td>
+                              </tr>
+                              <tr>
+                                <td>MFD</td>
+                                <td>Multi Function Display. These are the information screens located on a ship's cockpit.</td>
+                              </tr>
+                              <tr>
+                                <td>o7</td>
+                                <td>Salute emoticon.</td>
+                              </tr>
+                              <tr>
+                                <td>OM</td>
+                                <td>Orbital Marker. These are navigation points located around a planet's orbit.</td>
+                              </tr>
+                              <tr>
+                                <td>PO</td>
+                                <td>Port Olisar. This is an orbital space station located in Crusader's orbit.</td>
+                              </tr>
+                              <tr>
+                                <td>PTU</td>
+                                <td>Public Test Universe. This is a test version of the Persistent Universe.</td>
+                              </tr>
+                              <tr>
+                                <td>PU</td>
+                                <td>Persistent Universe. This is what makes Star Citizen Star Citizen.</td>
+                              </tr>
+                              <tr>
+                                <td>QD</td>
+                                <td>Quantum Drive. This is a ship component allowing ships to move at fractions of the speed of light.</td>
+                              </tr>
+                              <tr>
+                                <td>QT</td>
+                                <td>Quantum Travel. This is the method of travel used when using a Quantum Drive.</td>
+                              </tr>
+                              <tr>
+                                <td>REC</td>
+                                <td>Rental Equipment Credits. This is the currency used in the Arena Commander game mode modules.</td>
+                              </tr>
+                              <tr>
+                                <td>SCU</td>
+                                <td>Standard Cargo Unit. This is the universal measure for cargo volume.</td>
+                              </tr>
+                              <tr>
+                                <td>SPK</td>
+                                <td>Security Post Kareah. This is a new and popular security outpost located near Crusader.</td>
+                              </tr>
+                              <tr>
+                                <td>UEC</td>
+                                <td>United Earth Credits. This is the main currency that will be used when Star Citizen is released.</td>
+                              </tr>
+                              <tr>
+                                <td>UEE</td>
+                                <td>United Empire of Earth. This is the name of the current Human governmental body.</td>
+                              </tr>
+                              <tr>
+                                <td>VTOL</td>
+                                <td>Vertical Takeoff and Landing. Some ships have dedicated thrusters allowing for smoother take offs and landings in atmosphere.</td>
+                              </tr>
+                              <tr>
+                                <td>Warbond</td>
+                                <td>These are special promotions for ships that may include a discount or additional items. Warbond items cannot be bought with store credit.</td>
+                              </tr>
+                            </tbody>
+                            </table>
+                            <br>
+                            <img src="images/SC3.png" style="width: 300px;" alt="Wally's">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        Kendrick Ricio<br>
+        STAR-T4BW-6D5D
+    </footer>
+    <script src="js/sidebar.js"></script>
+    <script src="modernizr.custom.05819.js"></script>
+</body>
+</html>
